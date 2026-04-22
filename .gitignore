@@ -1,5 +1,5 @@
 HELP.md
-target/
+**/target/
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
@@ -33,3 +33,8 @@ build/
 .vscode/
 **/mvnw
 **/mvnw.cmd
+
+**/.mvn
+**/.gitignore
+
+**/.gitattributes
