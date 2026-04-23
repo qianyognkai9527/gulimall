@@ -7,4 +7,10 @@
   <artifactId>gulimall-product</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>gulimall-product</name>
+
+  <properties>
+    <java.version>8</java.version>
+    <java.compiler.source>8</java.compiler.source>
+    <java.compiler.target>8</java.compiler.target>
+  </properties>
 </project>

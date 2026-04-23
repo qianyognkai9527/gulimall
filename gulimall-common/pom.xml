@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Maven POM  -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.joker.gulimall</groupId>
+        <artifactId>gulimall</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <artifactId>gulimall-common</artifactId>
+    <name>My Simple Webx Application</name>
+    <packaging>war</packaging>
+    <properties>
+        <java.version>1.6</java.version>
+        <java.encoding>UTF-8</java.encoding>
+        <webx-version>3.2.4</webx-version>
+        <spring-version>3.2.7.RELEASE</spring-version>
+        <springext-plugin-version>1.2</springext-plugin-version>
+        <jetty-version>8.1.13.v20130916</jetty-version>
+        <project.build.sourceEncoding>${java.encoding}</project.build.sourceEncoding>
+        <productionMode>false</productionMode>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.5.3.1</version>
+        </dependency>
+
+    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+        </dependencies>
+    </dependencyManagement>
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+
+
+        </plugins>
+
+    </build>
+</project>

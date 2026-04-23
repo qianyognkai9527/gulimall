@@ -14,23 +14,25 @@
         <module>gulimall-ware</module>
         <module>gulimall-member</module>
         <module>gulimall-order</module>
+        <module>gulimall-manager</module>
+        <module>gulimall-common</module>
     </modules>
 
     <properties>
-        <java.version>17</java.version>
-        <java.compiler.source>17</java.compiler.source>
-        <java.compiler.target>17</java.compiler.target>
+        <java.version>8</java.version>
+        <java.compiler.source>8</java.compiler.source>
+        <java.compiler.target>8</java.compiler.target>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webmvc</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webmvc-test</artifactId>
+            <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>
