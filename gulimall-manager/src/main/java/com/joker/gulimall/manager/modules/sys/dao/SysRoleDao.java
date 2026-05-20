@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * 角色管理
  *
- * @author Mark sunlightcs@gmail.com
+ * @author Joker
  */
 @Mapper
 public interface SysRoleDao extends BaseMapper<SysRoleEntity> {

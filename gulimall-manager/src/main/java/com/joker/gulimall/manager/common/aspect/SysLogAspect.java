@@ -26,7 +26,7 @@ import java.util.Date;
 /**
  * 系统日志，切面处理类
  *
- * @author Mark sunlightcs@gmail.com
+ * @author Joker
  */
 @Aspect
 @Component

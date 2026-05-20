@@ -5,7 +5,7 @@ package com.joker.gulimall.manager.common.validator.group;
 /**
  * 腾讯云
  *
- * @author Mark sunlightcs@gmail.com
+ * @author Joker
  */
 public interface QcloudGroup {
 }

@@ -21,7 +21,7 @@ import java.io.IOException;
 /**
  * jwt token过滤器
  *
- * @author Mark sunlightcs@gmail.com
+ * @author Joker
  */
 public class JWTFilter extends AuthenticatingFilter {
 

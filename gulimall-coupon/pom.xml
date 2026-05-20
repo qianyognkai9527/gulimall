@@ -13,52 +13,21 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>gulimall-coupon</name>
     <description>gulimall-coupon</description>
-    <url/>
-    <licenses>
-        <license/>
-    </licenses>
-    <developers>
-        <developer/>
-    </developers>
-    <scm>
-        <connection/>
-        <developerConnection/>
-        <tag/>
-        <url/>
-    </scm>
+
     <properties>
-        <java.version>8</java.version>
-        <java.compiler.source>8</java.compiler.source>
-        <java.compiler.target>8</java.compiler.target>
+        <java.version>17</java.version>
+        <java.compiler.source>17</java.compiler.source>
+        <java.compiler.target>17</java.compiler.target>
         <spring-cloud.version>2025.1.1</spring-cloud.version>
     </properties>
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <groupId>com.joker.gulimall</groupId>
+            <artifactId>gulimall-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+
 
     <build>
         <plugins>

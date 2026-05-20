@@ -1,0 +1,16 @@
+package com.joker.gulimall.coupon.service;
+
+import com.joker.gulimall.coupon.entity.HomeSubject;
+import com.baomidou.mybatisplus.extension.service.IService;
+
+/**
+ * <p>
+ * ??ҳר??????jd??ҳ?????ܶ?ר?⣬ÿ??ר???????µ?ҳ?棬չʾר????Ʒ??Ϣ?? 服务类
+ * </p>
+ *
+ * @author joker
+ * @since 2026-05-15
+ */
+public interface HomeSubjectService extends IService<HomeSubject> {
+
+}

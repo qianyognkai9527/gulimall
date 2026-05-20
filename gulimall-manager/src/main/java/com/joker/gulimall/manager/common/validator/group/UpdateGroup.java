@@ -5,7 +5,7 @@ package com.joker.gulimall.manager.common.validator.group;
 /**
  * 更新数据 Group
  *
- * @author Mark sunlightcs@gmail.com
+ * @author Joker
  */
 
 public interface UpdateGroup {

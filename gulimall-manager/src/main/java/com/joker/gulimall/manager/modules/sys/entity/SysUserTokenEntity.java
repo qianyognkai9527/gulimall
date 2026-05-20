@@ -14,7 +14,7 @@ import java.util.Date;
 /**
  * 系统用户Token
  *
- * @author Mark sunlightcs@gmail.com
+ * @author Joker
  */
 @Data
 @TableName("sys_user_token")

@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * 文件上传
  *
- * @author Mark sunlightcs@gmail.com
+ * @author Joker
  */
 public interface SysOssService extends IService<SysOssEntity> {
 

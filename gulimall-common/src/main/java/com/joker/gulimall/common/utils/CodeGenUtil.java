@@ -1,7 +1,5 @@
 package com.joker.gulimall.common.utils;
 
-
-
 import com.baomidou.mybatisplus.generator.FastAutoGenerator;
 import com.baomidou.mybatisplus.generator.config.OutputFile;
 import com.baomidou.mybatisplus.generator.config.rules.DateType;
@@ -12,19 +10,19 @@ import java.util.Collections;
 
 public class CodeGenUtil {
     // 数据库配置
-    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/gulimall_pms?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8";
+    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/gulimall_wms?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8";
     private static final String JDBC_USERNAME = "root";
     private static final String JDBC_PASSWORD = "root123456";
 
     // 项目配置
     private static final String AUTHOR = "joker";
-    private static final String OUTPUT_DIR = System.getProperty("user.dir") + "/gulimall-product/src/main/java";
+    private static final String OUTPUT_DIR = System.getProperty("user.dir") + "/gulimall-ware/src/main/java";
     private static final String PACKAGE_NAME = "com.joker.gulimall";
 
     // 表配置
 //    private static final String[] TABLE_NAMES = {"payment_info"}; // 要生成的表名
     private static final String[] EXCLUDE_TABLE_NAMES = {""}; // 要生成的表名
-    private static final String TABLE_PREFIX = "pms_"; // 表前缀（可空）
+    private static final String TABLE_PREFIX = "wms_"; // 表前缀（可空）
 
     public static void main(String[] args) {
         FastAutoGenerator.create(JDBC_URL, JDBC_USERNAME, JDBC_PASSWORD)
@@ -46,7 +44,7 @@ public class CodeGenUtil {
                 .packageConfig(builder -> {
                     builder
                             .parent(PACKAGE_NAME) // 设置父包名
-                            .moduleName("product") // 设置父包模块名
+                            .moduleName("ware") // 设置父包模块名
                             .entity("entity") // 实体类包名
                             .mapper("mapper") // Mapper包名
                             .service("service") // Service包名
@@ -54,7 +52,7 @@ public class CodeGenUtil {
                             .controller("controller") // Controller包名
                             .xml("mapper.xml") // Mapper XML包名
                             .pathInfo(Collections.singletonMap(OutputFile.xml,
-                                    System.getProperty("user.dir") + "/gulimall-product/src/main/resources/mapper/product")) // XML文件路径
+                                    System.getProperty("user.dir") + "/gulimall-ware/src/main/resources/mapper/ware")) // XML文件路径
                             .build();
                 })
 

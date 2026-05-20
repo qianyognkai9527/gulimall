@@ -13,7 +13,7 @@ import java.util.Map;
 /**
  * 系统日志
  *
- * @author Mark sunlightcs@gmail.com
+ * @author Joker
  */
 public interface SysLogService extends IService<SysLogEntity> {
 

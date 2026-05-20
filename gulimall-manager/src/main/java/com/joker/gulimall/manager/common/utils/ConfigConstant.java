@@ -5,7 +5,7 @@ package com.joker.gulimall.manager.common.utils;
 /**
  * 系统参数相关Key
  *
- * @author Mark sunlightcs@gmail.com
+ * @author Joker
  */
 public class ConfigConstant {
     /**

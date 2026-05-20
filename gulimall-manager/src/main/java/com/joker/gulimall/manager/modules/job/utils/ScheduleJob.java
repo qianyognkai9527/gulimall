@@ -20,7 +20,7 @@ import java.util.Date;
 /**
  * 定时任务
  *
- * @author Mark sunlightcs@gmail.com
+ * @author Joker
  */
 public class ScheduleJob extends QuartzJobBean {
 	private Logger logger = LoggerFactory.getLogger(getClass());

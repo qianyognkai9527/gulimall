@@ -10,7 +10,7 @@ import java.util.UUID;
 /**
  * 生成token
  *
- * @author Mark sunlightcs@gmail.com
+ * @author Joker
  */
 public class TokenGenerator {
 

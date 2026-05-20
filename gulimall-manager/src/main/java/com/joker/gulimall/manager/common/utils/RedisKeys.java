@@ -5,7 +5,7 @@ package com.joker.gulimall.manager.common.utils;
 /**
  * Redis所有Keys
  *
- * @author Mark sunlightcs@gmail.com
+ * @author Joker
  */
 public class RedisKeys {
 

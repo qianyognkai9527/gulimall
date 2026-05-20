@@ -5,7 +5,7 @@ package com.joker.gulimall.manager.common.exception;
 /**
  * 自定义异常
  *
- * @author Mark sunlightcs@gmail.com
+ * @author Joker
  */
 public class RRException extends RuntimeException {
 	private static final long serialVersionUID = 1L;

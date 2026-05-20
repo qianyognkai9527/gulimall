@@ -8,7 +8,7 @@ import org.apache.shiro.authc.AuthenticationToken;
 /**
  * token
  *
- * @author Mark sunlightcs@gmail.com
+ * @author Joker
  */
 public class JWTToken implements AuthenticationToken {
     private String token;

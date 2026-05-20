@@ -10,7 +10,7 @@ import com.joker.gulimall.manager.modules.app.form.LoginForm;
 /**
  * 用户
  *
- * @author Mark sunlightcs@gmail.com
+ * @author Joker
  */
 public interface UserService extends IService<UserEntity> {
 

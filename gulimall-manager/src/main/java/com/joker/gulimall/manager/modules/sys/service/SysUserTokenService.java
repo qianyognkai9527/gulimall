@@ -9,7 +9,7 @@ import com.joker.gulimall.manager.modules.sys.entity.SysUserTokenEntity;
 /**
  * 用户Token
  *
- * @author Mark sunlightcs@gmail.com
+ * @author Joker
  */
 public interface SysUserTokenService extends IService<SysUserTokenEntity> {
 

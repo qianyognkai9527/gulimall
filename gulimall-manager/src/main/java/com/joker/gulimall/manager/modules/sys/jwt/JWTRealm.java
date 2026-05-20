@@ -18,7 +18,7 @@ import java.util.Set;
 /**
  * 认证
  *
- * @author Mark sunlightcs@gmail.com
+ * @author Joker
  */
 @Component
 public class JWTRealm extends AuthorizingRealm {
