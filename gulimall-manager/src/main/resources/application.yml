@@ -11,6 +11,8 @@ server:
     context-path: /renren-fast
 
 spring:
+  application:
+    name: gulimall-manager
   # 环境 dev|test|prod
   profiles:
     active: dev
