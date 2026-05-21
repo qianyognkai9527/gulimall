@@ -5,10 +5,10 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
-import java.io.Serializable;
 import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+
+import java.io.Serializable;
 
 /**
  * <p>
@@ -18,10 +18,9 @@ import lombok.Setter;
  * @author joker
  * @since 2026-04-23
  */
-@Getter
-@Setter
+@Data
 @TableName("pms_category")
-@Schema(name = "Category", description = "$!{table.comment}")
+@Schema(name = "Category", description = "商品分类")
 public class Category extends Model<Category> {
 
     private static final long serialVersionUID = 1L;

@@ -1,5 +1,6 @@
 package com.joker.gulimall.common.utils;
 
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.generator.FastAutoGenerator;
 import com.baomidou.mybatisplus.generator.config.OutputFile;
 import com.baomidou.mybatisplus.generator.config.rules.DateType;
@@ -10,7 +11,7 @@ import java.util.Collections;
 
 public class CodeGenUtil {
     // 数据库配置
-    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/gulimall_wms?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8";
+    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/gulimall_wms?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8";
     private static final String JDBC_USERNAME = "root";
     private static final String JDBC_PASSWORD = "root123456";
 
@@ -35,7 +36,6 @@ public class CodeGenUtil {
                             .dateType(DateType.ONLY_DATE) // 时间策略
                             .commentDate("yyyy-MM-dd") // 注释日期格式
                             .fileOverride() // 覆盖已生成文件（谨慎使用）
-                            .enableSwagger() // 开启 swagger 模式
                             .enableSpringdoc() // 开启 springdoc 模式
                             .build();
                 })
@@ -66,6 +66,8 @@ public class CodeGenUtil {
                             .entityBuilder()
                             .enableLombok() // 启用Lombok
                             .enableFileOverride()
+                            .idType(IdType.AUTO)
+
                             .enableTableFieldAnnotation() // 开启生成字段注解
                             .naming(NamingStrategy.underline_to_camel) // 数据库表映射到实体的命名策略
                             .columnNaming(NamingStrategy.underline_to_camel) // 数据库表字段映射到实体属性的命名策略

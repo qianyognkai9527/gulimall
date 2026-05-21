@@ -3,22 +3,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.0.5</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <groupId>com.joker.gulimall</groupId>
+        <artifactId>gulimall</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.joker.gulimall</groupId>
     <artifactId>gulimall-order</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
     <name>gulimall-order</name>
     <description>gulimall-order</description>
 
     <properties>
-        <java.version>8</java.version>
-        <java.compiler.source>8</java.compiler.source>
-        <java.compiler.target>8</java.compiler.target>
-        <spring-cloud.version>2025.1.1</spring-cloud.version>
+        <java.version>17</java.version>
+        <java.compiler.source>17</java.compiler.source>
+        <java.compiler.target>17</java.compiler.target>
     </properties>
     <dependencies>
         <dependency>
@@ -34,7 +30,16 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
-
 </project>

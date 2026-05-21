@@ -1,3 +1,32 @@
+server:
+  port: 3300
+  undertow:
+    io-threads: 4
+    worker-threads: 20
+    buffer-size: 1024
+    direct-buffers: true
 spring:
-  application:
-    name: gulimall-order
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/gulimall_order?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&allowMultiQueries=true&allowPublicKeyRetrieval=true
+    username: root
+    password: root123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      initial-size: 10
+      min-idle: 10
+      max-active: 20
+      max-wait: 60000
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      max-evictable-idle-time-millis: 600000
+      validation-query: SELECT 1
+      test-while-idle: true
+      test-on-borrow: false
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/**/*.xml
+  type-aliases-package: com.joker.gulimall.order.entity
+  global-config:
+    db-config:
+      id-type: auto
